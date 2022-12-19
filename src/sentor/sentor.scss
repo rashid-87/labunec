@@ -1,0 +1,31 @@
+.sentor {
+  background: url(./../img/row/bgj.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__info {
+    padding: 45px 100px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--white);
+  }
+}
+@media (max-width: 800px) {
+  .sentor {
+    &__info {
+      padding: 30px 60px;
+      margin-bottom: 80px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .sentor {
+    &__info {
+      padding: 20px 0px;
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.tabs {
+  margin-bottom: 120px;
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--gren-yellow);
+  }
+  &__item {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__list {
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--bg-title);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  &__list:hover {
+    background: var(--gren-yellow);
+    color: var(--white);
+  }
+  &__list.active {
+    background: var(--gren-yellow);
+    color: var(--white);
+  }
+  &__wrapper {
+    display: none;
+  }
+  &__grupp {
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+  }
+  .active {
+    display: block;
+  }
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+  }
+  &__text {
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--black);
+  }
+  &__text::before {
+    content: url(./../img/tabs/tabs.svg);
+    position: absolute;
+    left: -60px;
+  }
+  &__active {
+    display: none;
+  }
+}
+@media( max-width: 1000px) {
+  .tabs {
+    margin-bottom: 90px;
+    &__title {
+      font-size: 25px;
+    }
+    &__item {
+      margin: 30px 0;
+    }
+    &__list {
+      padding: 15px 20px;
+      font-size: 20px;
+    }
+    &__grupp {
+      column-gap: 25px;
+    }
+    &__wrapp {
+      row-gap: 25px;
+    }
+    &__text {
+      margin-left: 50px;
+      font-size: 16px;
+    }
+    &__text::before {
+      left: -50px;
+    }
+  }
+}
+@media( max-width: 870px) {
+  .tabs {
+    margin-bottom: 50px;
+    &__title {
+      font-size: 22px;
+    }
+    &__item {
+      margin: 30px 0;
+    }
+    &__list {
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+    &__grupp {
+      column-gap: 20px;
+    }
+    &__wrapp {
+      row-gap: 20px;
+    }
+    &__text {
+      margin-left: 50px;
+      font-size: 15px;
+    }
+    &__text::before {
+      left: -50px;
+    }
+  }
+}
+@media( max-width: 830px) {
+  .tabs {
+    margin-bottom: 30px;
+    &__title {
+      font-size: 20px;
+    }
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 30px 0;
+    }
+    &__list {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    &__grupp {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__wrapp {
+      row-gap: 20px;
+    }
+    &__text {
+      margin-left: 50px;
+      font-size: 15px;
+    }
+    &__images {
+      order: -1;
+      margin-bottom: 20px;
+    }
+    &__img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    &__text::before {
+      left: -50px;
+    }
+  }
+}
+

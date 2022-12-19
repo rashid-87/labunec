@@ -1,0 +1,105 @@
+.dopInfo {
+  background-image: url(./../img/header/rm.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__wrapp {
+    width: 550px;
+  }
+  &__title {
+    padding-top: 100px;
+    font-size: 60px;
+    line-height: 73px;
+    color: var(--white);
+  }
+  &__suptitle {
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--white);
+  }
+  &__text {
+    margin: 70px 0;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+  }
+  &__btn {
+    margin-bottom: 60px;
+    padding: 20px 50px;
+    width: 290px;
+    display: inline-block;
+    border: none;
+    background: none;
+    background: var(--background-btn);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  &__btn:hover {
+    color: var(--white);
+    background: var(--gren-yellow);
+  }
+}
+@media (max-width: 750px) {
+  .dopInfo {
+    &__title {
+      padding-top: 70px;
+      font-size: 40px;
+    }
+    &__suptitle {
+      font-size: 20px;
+    }
+    &__text {
+      margin: 40px 0;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__btn {
+      padding: 8px 0px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      width: 170px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .dopInfo {
+    &__wrapp {
+      width: 100%;
+    }
+    &__title {
+      padding-top: 30px;
+      font-size: 32px;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .dopInfo {
+    &__wrapp {
+      width: 100%;
+    }
+    &__title {
+      padding-top: 30px;
+      font-size: 22px;
+    }
+    &__suptitle {
+      font-size: 18px;
+    }
+    &__text {
+      margin: 25px 0;
+      font-size: 13px;
+    }
+    &__btn {
+      padding: 10px 0;
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+}
